@@ -1,0 +1,298 @@
+/* Body */
+body{
+		/*para colocar una imagen de fondo*/
+	background-image:url(../imagenes/fondo.jpg);
+		/* Para que no se repita la imagen de fondo: */
+		/*background-repeat: no-repeat;*/
+		/*Para ajustar la imagen de fondo:*/
+		/*background-size: 100% 80%;*/
+		/*Para colocar color al fondo*/ 
+		/*background-color: #D6EAF8;*/
+		/*para poner fuente a la letra*/
+	font-family:fuente3;
+		/*para modificar el numero de letra, se expresa en pixeles*/
+	font-size:45px;
+		/*para modificar el color de la letra*/
+	color: #BA4A00;
+}
+hr{
+		/*modifica el grosor, el color y como se ve de la linea*/
+	border: 5px solid #0564BA;
+		/*modifica la punta de la linea*/
+	border-radius: 5px;
+}
+
+p{
+		/*se utiliza para alinea el texto por default estan alineados a la izquierda*/
+	text-align: center;
+		/*se utiliza para cambiar el tamaño de la letra*/
+	font-size: 10px;
+	color: #6E2C00;
+
+}
+
+table,td,tr{
+		/*linea, grosor y tipo de linea*/
+	border:4px solid;
+		/*color de la linea */
+	border-color:#1C2833;
+		/*alineación del texto*/
+	text-align: center;
+		/*color del fondo*/
+	background-color:#FAD7A0;
+}
+th{
+	background-color:#4F85E5;
+}
+
+ul{
+	/*indica el tipo de viñeta, puede ser un circulo, un cuadrado*/
+	list-style-type:squart;
+	/*Indica el ...   */	
+	list-style-position: inside;
+}
+
+ol{
+	/*algunos de los valores de list-style-type son:
+	lower-alpha;  lower-roman;  upper-alpha;  upper-roman;
+	a,b,c,d,e,f   i.ii.iii.iv   A,B,C,D,E,F   I.II.III.IV */
+	list-style-type:upper-roman;
+	list-style-position: inside;
+}
+/*el punto "." es para agregar una clase*/
+	/*el pie, es para cambiar las caracteristicas de las notas de pie, osea de las letras que aparecen hasta abajo*/
+.pie{
+	text-align:center;
+	font-size:30px;
+	color:#273746;
+	font-weight:bold;
+	font-family:fuente2;
+}
+	/*el table, es para cambiar las caracteristicas de la letra de las tablas*/
+.table{
+	font-size:30px;
+	font-family:fuenteT;
+	color:#1C2833;
+	font-weight:bold;
+}
+	/*el title, es para cambiar las caracteristicas de la letra de los titulos*/
+.title{
+	font-size:95px;
+	color:#0B2D4C;
+	font-weight:bold;
+	font-family:fuente1;
+}
+	/*para cambiar las caracteristicas de las imagenes del index*/
+.imgM{
+	width:400px;
+	height:350px;
+	border:6px solid #470F03;
+}
+	/*para cambiar las caracteristicas de las imagenes de los botones*/
+.bot{
+	width:100px;
+	height:100px;
+	border-radius:50%;
+}
+	/*para cambiar las caracteristicas de las imagenes de las tablas*/
+.imgT{
+	width:200px;
+	height:250px
+}
+	/*para cambiar las caracteristicas de las imagenes de todas las demas*/
+.otrasimg{
+	width:500px;
+	height:300px;
+	border:4px solid #470F03;
+	padding:4px;
+}
+
+@font-face{
+	font-family:fuente1;
+	src: url("../fuentes/Primary.ttf");
+}
+
+@font-face{
+	font-family:fuente2;
+	src: url("../fuentes/Charming.ttf");
+}
+
+@font-face{
+	font-family:fuente3;
+	src: url("../fuentes/Spring.ttf");
+}
+
+@font-face{
+	font-family:fuenteT;
+	src: url("../fuentes/Luckymoon.ttf");
+}
+
+.fuentegoogle{
+	font-family: 'Delicious Handrawn', cursive;
+	font-size:25px;
+	text-align:center;
+	
+}
+
+/*Uso de div´s*/
+/*Div o caja para el encabezado*/
+
+*{
+	margin:0px;
+	padding:0px;
+}
+div#top{
+	width:100%;
+	height:150px;
+	background-image:linear-gradient(#669DCF,#9CC0E1);
+}
+
+div#principal{
+	margin:auto;
+	margin-top:10px;
+	width:90%;
+	height:80%;
+	background-image:radial-gradient(#72ADCA,#7DC8EE);
+	border:6px solid #1F618D;
+}
+
+div#piep{
+	margin-top:10px;
+	width:100%;
+	height:150px;
+	background-color:#A9CCE3;
+	/*background-image:url(../imagenes/fondo4.jpg);--con esto se puede poner imagen aparte de color*/
+}
+
+.caja{
+	height:350px;
+	width:200px;
+	background:#F8C471;
+	border:1px solid #F8C471;
+	margin:5px;
+	color: #2C3E50;
+	text-align:center;
+	display:inline-block;
+}
+
+.caja:hover{
+	box-shadow:0 0 10px blue;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:2px;
+	font-size:20px;
+	color:black;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+
+.carrousel{
+	width:650px;
+	margin:auto;
+	box-sizing:border-box;
+}
+
+.contcarrousel{
+	width:100%;
+	height:350px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+
+.itemcarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+
+.itemcarrouseltTarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+
+.itemcarrouselArrow{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+
+.itemcarrouselArrow >i :hover{
+	cursor:pointer;
+}
+
+.contercarrouselController{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+	
+}
+
+.contercarrouselController >a{
+	text-decoration:none;
+	font-size:30px;
+	color:blue;
+}
+
+.itemcarrouselArrow >a >i {
+	color:#000205;
+}
+
+.caja-info{
+	padding-top:2px;
+	font-size:40px;
+	color:#922B21;
+	font-weight:bold;
+}
+
+div#alrededor{
+	margin-top:10px;
+	width:60%;
+	height:60%;
+	background-color:#ABEBC6;
+	border:6px solid #F9E79F;
+}
+
+.texto-con{
+	padding-top:5px;
+	font-size:30px;
+	color:#581845;
+	font-weight:bold;
+}
+
+.texto-parrafo{
+	padding-top:5px;
+	font-size:25px;
+	color:#4D0E00;
+}
+
+.ca{
+	background:#CD6155;
+	border:3px solid #D4AF37;
+	margin:5px;
+	color: #CD6155;
+	text-align:center;
+	display:inline-block;
+	width:100px;
+	height:100px;
+	border-radius:50%;
+}
+
+.ca:hover{
+	box-shadow:0 0 10px blue;
+	transform:scale(1.3);
